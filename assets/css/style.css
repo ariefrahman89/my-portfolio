@@ -1,0 +1,249 @@
+
+html{
+    position: relative;
+}
+
+body{
+    margin-top: 50px;
+    background-image:url(../img/128-161.jpg);
+    background-repeat:repeat;
+}
+
+/* Navbar */
+.navbar{
+    background-color: rgb(7, 5, 128);
+    border-radius: 10px 10px 0 0;
+    margin-top: -5px;
+}
+
+.navbar-brand:hover{
+    font-weight: bold;
+    font-family: "Segoe UI Symbol";
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar a{
+    font-family: "Roboto";
+}
+
+.page-scroll{
+    color: aqua;
+}
+
+.navbar-brand{
+    border: 1px solid rgb(7, 5, 128);
+}
+
+.navbar-nav li a{
+    color: aqua;
+}
+
+.active{
+    background-color: rgb(250, 0, 0);
+    color: aqua;
+}
+
+ul li.nav-item{
+    margin-left: 10px;
+}
+
+/* Header */
+.profile-header{
+    background-image: url(../img/bg.jpg);
+    min-height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.user-detail{
+    margin: -100px 0px 30px 0px;
+    color: aqua;
+}
+
+.user-detail .me{
+    text-shadow: 5px 5px 10px #000000;
+    margin: 15px 0px 5px 0px;
+}
+.user-detail img{
+    height: 200px;
+    width: 200px;
+    border: 3px solid rgb(7, 5, 128);
+    box-shadow: 1px 1px 10px rgb(7, 5, 128), -1px -1px 10px rgb(7, 5, 128);
+}
+
+.user-social-detail{
+    padding: 15px 0px;
+    background-color: rgb(7, 5, 128);
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Setangah lingkaran */
+.ball {
+    background-color: rgba(7, 5, 128, .6);
+    height: 50px;
+    width: 100px;
+    border-radius: 100px 100px 0 0;
+    margin: auto;   
+}
+
+/* Section */
+section{
+    background-color: rgba(7, 5, 128, .6);
+    color: white;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+section:hover{
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.6);
+}
+
+section .title{
+    margin-top: 15px;
+    color: rgb(0, 255, 255);
+    text-shadow: 1px 1px 10px rgb(9, 239, 255), -1px -1px 10px rgb(9, 239, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.row h4{
+    color: aqua;
+    text-shadow: 1px 1px 5px rgb(250, 0, 0), -1px -1px 5px rgb(255, 0, 0);
+}
+
+.row ul, h4{
+    text-align: left;
+}
+
+.education-detail{
+    margin: auto;
+}
+
+.experience-detail{
+    margin: auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 540px) {
+    .carousel-caption {
+        font-size: 10px;
+    }
+}
+  
+@media screen and (min-width: 720px) {
+    .carousel-caption {
+        font-size: 20px;
+    }
+}
+
+/* Scrool top */
+#myBtn-up {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(7, 5, 128, .6);
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+#myBtn-up i{
+    width: 20px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    top: 3px;
+}
+
+#myBtn-up:hover {
+background-color: rgb(7, 5, 128);
+box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Lightbox Modal*/
+.modal{
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+.modal-content{
+    border-radius: 10px;
+}
+
+.slide{
+    border-radius: 10px;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* Contact */
+.map-container-5{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-container-5 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.card{
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.384);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.664);
+    
+}
+
+.card h5{
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+
+.contact ul{
+    list-style-type: none;
+}
+
+/* Footer */
+.user-social-detail a i{
+    color: #fff;
+    font-size: 23px;
+    padding: 0px 5px;
+}
