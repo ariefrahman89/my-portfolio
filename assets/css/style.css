@@ -5,7 +5,7 @@ html{
 
 body{
     margin-top: 50px;
-    background-color: rgba(143, 86, 21, 0.527);
+    background-color: rgba(156, 86, 6, 0.767);
     /* background-image:url(../img/128-161.jpg);
     background-repeat:repeat; */
 }
@@ -29,11 +29,18 @@ body{
     }
 
     .experience-content h4,
-    .experience-content .d-flex,
-    .education-content h4,
-    .education-content .d-flex{
+    .education-content h4{
         font-size: 15px;
     }
+
+    .experience-content .d-flex,
+    .education-content .d-flex{
+        font-size: 14px;
+    }
+
+    /* .education-content .univ{
+        font
+    } */
     
 }
 
@@ -124,7 +131,6 @@ ul li.nav-item{
 
 /* education */
 .education-detail{
-    margin: auto;
     padding-bottom: 20px;
 }
 
@@ -133,7 +139,7 @@ ul li.nav-item{
 }
 
 .list-group-item{
-    background-color: #AC8353;
+    background-color: #B27D3F;
     color: white;
 }
 
@@ -174,7 +180,6 @@ ul li.nav-item{
 
 /* experience */
 .experience-detail{
-    margin: auto;
     padding-bottom: 20px;
 }
 
@@ -333,7 +338,7 @@ box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.6);
 .card{
     width: 100%;
     height: 100%;
-    background-color: #AC8353;
+    background-color: #B27D3F;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.664);
 }
 
