@@ -5,29 +5,66 @@ html{
 
 body{
     margin-top: 50px;
-    background-image:url(../img/128-161.jpg);
-    background-repeat:repeat;
+    background-color: rgba(143, 86, 21, 0.527);
+    /* background-image:url(../img/128-161.jpg);
+    background-repeat:repeat; */
 }
+
+/* Responsive */
+@media screen and (max-width: 540px) {
+    .carousel-caption {
+        font-size: 10px;
+    }
+
+    .card-detail{
+        height: 50px;
+    }
+
+    .list-group{
+        margin-left: 0;
+    }
+
+    .education-content{
+        margin-right: 0;
+    }
+
+    .experience-content h4,
+    .experience-content .d-flex,
+    .education-content h4,
+    .education-content .d-flex{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (min-width: 720px) {
+    .carousel-caption {
+        font-size: 20px;
+    }
+}
+/* end responsive */
 
 /* Navbar */
-.navbar{
-    background-color: rgb(7, 5, 128);
+nav.navbar{
+    background-color: #692104;
     border-radius: 10px 10px 0 0;
     margin-top: -5px;
+    border-bottom: 2px solid white;
 }
 
-.navbar-brand:hover{
-    font-weight: bold;
-    font-family: "Segoe UI Symbol";
+nav.navbar .logo{
+    font-size: 20px;
+    width: 50px;
+}
+
+.navbar-nav a:hover{
     cursor: pointer;
-    font-weight: bold;
-}
-
-.navbar a{
-    font-family: "Roboto";
+    color: white;
 }
 
 .page-scroll{
+    font-family: "Roboto";
+    font-weight: bold;
     color: aqua;
 }
 
@@ -35,18 +72,16 @@ body{
     border: 1px solid rgb(7, 5, 128);
 }
 
-.navbar-nav li a{
-    color: aqua;
-}
-
 .active{
-    background-color: rgb(250, 0, 0);
+    background-color: rgba(250, 0, 0, 0.603);
     color: aqua;
 }
 
 ul li.nav-item{
     margin-left: 10px;
+    
 }
+/* end navbar */
 
 /* Header */
 .profile-header{
@@ -67,11 +102,16 @@ ul li.nav-item{
     text-shadow: 5px 5px 10px #000000;
     margin: 15px 0px 5px 0px;
 }
+
+.user-detail p.me{
+    font-size: 20px;
+}
+
 .user-detail img{
     height: 200px;
     width: 200px;
-    border: 3px solid rgb(7, 5, 128);
-    box-shadow: 1px 1px 10px rgb(7, 5, 128), -1px -1px 10px rgb(7, 5, 128);
+    border: 3px solid #692104;
+    box-shadow: 1px 1px 10px #692104, -1px -1px 10px #692104;
 }
 
 .user-social-detail{
@@ -80,21 +120,109 @@ ul li.nav-item{
     margin-top: 30px;
     text-align: center;
 }
+/* end header */
+
+/* education */
+.education-detail{
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.list-group{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.774);
+}
+
+.list-group-item{
+    background-color: #AC8353;
+    color: white;
+}
+
+.list-group-item:hover{
+    background-color: aqua;
+    color: black;
+}
+
+.list-group a.active{
+    background-color: aqua;
+    color: black;
+}
+
+.education-content{
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.774);
+}
+
+.education-content h4{
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.education-content p{
+    margin-top: -10px;
+}
+
+.education-content h4, .education-content p{
+    color: black;
+    text-align: left;
+}
+
+.education-content hr{
+    border: 2px solid black;
+    margin-top: 5px;
+}
+/* end education */
+
+/* experience */
+.experience-detail{
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.experience-detail h4{
+    text-align: left;
+}
+
+.experience-content{
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.774);
+}
+
+.experience-content h4{
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.experience-content p{
+    margin-top: -10px;
+}
+
+.experience-content h4, 
+.experience-content p{
+    color: black;
+    text-align: left;
+}
+
+.experience-content hr{
+    border: 2px solid black;
+    margin-top: 5px;
+}
+/* end experience */
 
 /* Setangah lingkaran */
 .ball {
-    background-color: rgba(7, 5, 128, .6);
+    background-color: #692104;
     height: 50px;
     width: 100px;
     border-radius: 100px 100px 0 0;
     margin: auto;   
 }
+/* end setengah lingkaran */
 
 /* Section */
 section{
-    background-color: rgba(7, 5, 128, .6);
+    background-color: #692104;
     color: white;
-    width: 80%;
+    width: 90%;
     margin: auto;
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
@@ -114,24 +242,10 @@ section .title{
     border-bottom-right-radius: 10px;
     padding-bottom: 10px;
 }
+/* end section */
 
-.row h4{
-    color: aqua;
-    text-shadow: 1px 1px 5px rgb(250, 0, 0), -1px -1px 5px rgb(255, 0, 0);
-}
 
-.row ul, h4{
-    text-align: left;
-}
-
-.education-detail{
-    margin: auto;
-}
-
-.experience-detail{
-    margin: auto;
-}
-
+/* Portfolio */
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -140,22 +254,7 @@ section .title{
 .pointer{
     cursor: pointer;
 }
-
-@media screen and (min-width: 540px) {
-    .carousel-caption {
-        font-size: 10px;
-    }
-
-    .card-detail{
-        height: 50px;
-    }
-}
-  
-@media screen and (min-width: 720px) {
-    .carousel-caption {
-        font-size: 20px;
-    }
-}
+/* emd portfolio */
 
 /* Scrool top */
 #myBtn-up {
@@ -167,7 +266,7 @@ section .title{
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgba(7, 5, 128, .6);
+    background-color: #692104b4;
     color: white;
     cursor: pointer;
     border-radius: 50%;
@@ -188,9 +287,10 @@ section .title{
 }
 
 #myBtn-up:hover {
-background-color: rgb(7, 5, 128);
+background-color: #692104;
 box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.6);
 }
+/* end scroll top */
 
 /* Lightbox Modal*/
 .modal{
@@ -213,8 +313,9 @@ box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.6);
     border-radius: 50%;
     z-index: 2;
 }
+/* end modal */
 
-/* Contact */
+/* contact */
 .map-container-5{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -232,7 +333,7 @@ box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.6);
 .card{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 255, 255, 0.384);
+    background-color: #AC8353;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.664);
 }
 
@@ -243,11 +344,37 @@ box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.6);
 
 .contact ul{
     list-style-type: none;
+    text-align: left;
 }
 
+.contact-list h6{
+    text-align: left;
+    padding-left: 10px;
+}
+/* end contact */
+
 /* Footer */
-.user-social-detail a i{
-    color: #fff;
-    font-size: 23px;
-    padding: 0px 5px;
+footer{
+    margin-top: 20px;
+    width:100%;
+    height: 110px;
+    background-color: #692104;
+    padding-top: 20px;
+}
+
+footer .link{
+    color: salmon;
+}
+
+/* footer .btn{
+    height: 25px;
+} */
+
+footer p{
+    color: rgb(255, 255, 255);
+    font-size: 0.9em;
+}
+
+footer p i{
+    color: salmon;
 }
