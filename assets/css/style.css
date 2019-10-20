@@ -139,7 +139,7 @@ ul li.nav-item{
 }
 
 .list-group-item{
-    background-color: #B27D3F;
+    background-color: rgb(0, 187, 9);
     color: white;
 }
 
@@ -212,6 +212,163 @@ ul li.nav-item{
     margin-top: 5px;
 }
 /* end experience */
+
+/* ability */
+.ability-detail{
+    padding-bottom: 20px;
+}
+
+.ability-content{
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.774);
+    height: 100%;
+}
+
+.ability-content h4{
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.ability-content h4, 
+.ability-content p{
+    color: black;
+    text-align: left;
+}
+
+.ability-content hr{
+    border: 2px solid black;
+    margin-top: 5px;
+}
+
+.wrapper{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 0px;
+    margin-top: 0;
+}
+
+.skill {
+    margin-bottom: 20px;
+    position: relative;
+    overflow-x:hidden;
+    background-color: #692104;
+    border-radius: 5px;
+}
+
+.skill > p {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    line-height: 70px;
+    margin-top: -20px;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.skill:before{
+    width: 100%;
+    height: 10px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: #959595;
+    bottom: 0;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background:#16ff21;
+    display: block;
+    position: relative;
+}
+
+/* SKILL 1 */
+
+.skill-bar span{
+    position: absolute;
+    /* border-top: 1px solid #f4392f; */
+    top: -30px;
+    padding: 0;
+    font-size: 14px;
+    padding: 3px 0;
+    font-weight: 500;
+    color: white;
+}
+
+.skill-bar {
+    position: relative;
+        
+}
+
+.skill95{
+    width: 95%;
+        
+}
+.skill95 .skill-count95 {
+    right: 0;
+}
+
+/* SKILL 2 */
+.skill90{
+    width: 90%;
+}
+
+.skill90 .skill-count90 {
+    right: 0;
+}
+/* SKILL 3 */
+.skill85{
+    width: 85%;
+}
+.skill85 .skill-count85 {
+    right: 0;
+}
+
+/* SKILL 4 */
+.skill80{
+    width: 80%
+}
+
+.skill80 .skill-count80 {
+    right: 0;
+}
+
+/* SKILL 5 */
+.skill75{
+    width: 75%;
+}
+
+.skill75 .skill-count75 {
+    right: 0;
+}
+
+/* SKILL 6 */
+.skill70{
+    width: 70%
+}
+
+.skill70 .skill-count70 {
+    right: 0;
+}
+
+.skill65{
+    width: 65%
+}
+
+.skill65 .skill-count65 {
+    right: 0;
+}
+
+.skill60{
+    width: 60%
+}
+
+.skill60 .skill-count60 {
+    right: 0;
+}
+
+/* end ability */
 
 /* Setangah lingkaran */
 .ball {
@@ -300,14 +457,6 @@ box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.6);
 /* Lightbox Modal*/
 .modal{
     background-color: rgba(0, 0, 0, 0.13);
-}
-
-.modal-content{
-    border-radius: 10px;
-}
-
-.slide{
-    border-radius: 10px;
 }
 
 .close {
